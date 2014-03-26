@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gocaptcha by hanguofeng</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Gocaptcha</h1>
+        <p>A captcha service writen in golang</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/hanguofeng/gocaptcha" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/hanguofeng/gocaptcha/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/hanguofeng/gocaptcha/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <hr><p>View in [<a href="README-en.md">English</a>][<a href="README.md">中文</a>]</p>
+
+<hr><h1>
+<a name="gocaptcha" class="anchor" href="#gocaptcha"><span class="octicon octicon-link"></span></a>gocaptcha</h1>
+
+<p>go语言验证码服务器</p>
+
+<p><a href="https://travis-ci.org/hanguofeng/gocaptcha"><img src="https://travis-ci.org/hanguofeng/gocaptcha.png?branch=master" alt="Build Status"></a>  <a href="https://drone.io/github.com/hanguofeng/gocaptcha/latest"><img src="https://drone.io/github.com/hanguofeng/gocaptcha/status.png" alt="Build Status"></a>   <a href="https://coveralls.io/r/hanguofeng/gocaptcha"><img src="https://coveralls.io/repos/hanguofeng/gocaptcha/badge.png" alt="Coverage Status"></a>   </p>
+
+<h2>
+<a name="feature" class="anchor" href="#feature"><span class="octicon octicon-link"></span></a>Feature</h2>
+
+<ul>
+<li>支持中文验证码</li>
+<li>支持自定义词库、字库</li>
+<li>支持自定义滤镜机制，通过滤镜来增加干扰，加大识别难度</li>
+<li>当前的滤镜包括：
+
+<ul>
+<li>支持干扰点</li>
+<li>支持干扰线</li>
+<li>支持其他模式的干扰</li>
+<li>更多模式，可实现imagefilter接口来扩展</li>
+</ul>
+</li>
+<li>支持自定义存储引擎，存储引擎可扩展</li>
+<li>目前支持的存储引擎包括:
+
+<ul>
+<li>内置(buildin)</li>
+<li>memcache</li>
+<li>如需扩展存储引擎，可实现StoreInterface接口</li>
+</ul>
+</li>
+</ul><h2>
+<a name="useage" class="anchor" href="#useage"><span class="octicon octicon-link"></span></a>Useage</h2>
+
+<p><strong>安装</strong></p>
+
+<pre><code>go get github.com/hanguofeng/gocaptcha
+</code></pre>
+
+<p><strong>Quick Start</strong></p>
+
+<p>参考 <a href="captcha_test.go">captcha_test.go</a></p>
+
+<p>参考 <a href="samples/http">samples/http</a></p>
+
+<p><strong>文档</strong></p>
+
+<p>[<a href="https://github.com/hanguofeng/gocaptcha/wiki">captcha.go Wiki</a>]</p>
+
+<h2>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>TODO</h2>
+
+<ul>
+<li>运维管理工具</li>
+</ul><h2>
+<a name="licence" class="anchor" href="#licence"><span class="octicon octicon-link"></span></a>LICENCE</h2>
+
+<p>gocaptcha使用[<a href="LICENSE">MIT许可协议</a>]</p>
+
+<p>使用的开源软件列表，表示感谢</p>
+
+<ul>
+<li><a href="https://github.com/dchest/captcha">https://github.com/dchest/captcha</a></li>
+<li><a href="https://code.google.com/p/freetype-go/freetype">https://code.google.com/p/freetype-go/freetype</a></li>
+<li><a href="https://github.com/bradfitz/gomemcache">https://github.com/bradfitz/gomemcache</a></li>
+<li><a href="https://code.google.com/p/zpix/">https://code.google.com/p/zpix/</a></li>
+</ul><p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/hanguofeng/gocaptcha/trend.png" alt="Bitdeli Badge"></a></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/hanguofeng">hanguofeng</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
