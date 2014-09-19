@@ -39,6 +39,10 @@ Useage
 
 [[captcha.go Wiki](https://github.com/hanguofeng/gocaptcha/wiki)]
 
+Changelog
+----
+* **B1.1** - 重写验证码图片生成方式，由原有各字符统一打入底图变为分别生成子图片，便于对各字符进行扭曲、旋转和错位。
+
 TODO
 ----
 * 运维管理工具
